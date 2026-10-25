@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MONOLINE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <button class="menu" aria-label="Open menu"><span></span></button>
+      <a href="index.html" class="logo" aria-label="Monoline home"><img src="images/Logo.png" alt="Monoline"></a>
+      <nav class="nav">
+        <a href="#">Blogs</a><a href="#">FAQs</a>
+        <button class="icon-btn" aria-label="Notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></button>
+        <button class="icon-btn" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/><path d="M2.5 3h2.6l2.4 12h11.2l2-8.5H6.2"/></svg><span class="badge" id="cartCount" hidden>0</span></button>
+        <button class="icon-btn" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="10" r="3"/><path d="M6.5 18.5a7 7 0 0 1 11 0"/></svg></button>
+      </nav>
+    </div>
+    <div class="filters" role="toolbar" aria-label="Filters">
+      <div class="chips" id="chips"></div>
+      <label class="search"><input id="q" type="search" placeholder="Search..." aria-label="Search products"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></label>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <img src="images/hero.jpg" alt="White, olive and burgundy shirts hanging on a rail">
+    <div class="hero-copy">
+      <span class="eyebrow">- kind reminder </span>
+      <h1>LIFE ISN'T PERFECT BUT YOUR OUTFIT CAN BE.😌✨</h1>
+      <p>Buy now or cry later.</p>
+    </div>
+  </section>
+
+  <section class="grid" id="grid" aria-label="Products"></section>
+</main>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
